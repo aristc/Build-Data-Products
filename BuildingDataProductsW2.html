@@ -128,45 +128,18 @@ $(document).ready(function () {
 </div>
 
 
-<div id="assignment" class="section level1">
-<h1>Assignment</h1>
-<p>“Create a web page using R Markdown that features a map created with Leaflet.</p>
-<p>Host your webpage on either GitHub Pages, RPubs, or NeoCities.</p>
-<p>Your webpage must contain the date that you created the document, and it must contain a map created with Leaflet. We would love to see you show off your creativity!“”</p>
-</div>
 <div id="visualize-paris-museums-on-a-map" class="section level1">
 <h1>Visualize Paris museums on a map!</h1>
 <p>Paris hosts many art museums that you have to see when you visit the city. Here’s a map to help you find the most famous ones!</p>
-<div id="prepare-the-data" class="section level3">
-<h3>Prepare the data</h3>
-<p>The data was prepared in a csv file for the purpose of this exercise.</p>
-<pre class="r"><code>df&lt;-read.csv(&quot;Paris Museums.csv&quot;)
-museumLatLong&lt;-data.frame(
-    lat = df$Latitude,
-    lng = df$Longitude)
-museumSites&lt;-df$URL</code></pre>
 </div>
-<div id="create-the-icon" class="section level3">
-<h3>Create the icon</h3>
-<pre class="r"><code>library(leaflet)</code></pre>
-<pre><code>## Warning: package 'leaflet' was built under R version 3.3.2</code></pre>
-<pre class="r"><code>museumIcon&lt;-makeIcon(
-    iconUrl = &quot;http://www.freeiconspng.com/uploads/museum-icon-6.jpg&quot;,
-    iconWidth =31*215/230, iconHeight=31)</code></pre>
-</div>
-<div id="build-the-map" class="section level3">
-<h3>Build the map</h3>
-<pre class="r"><code>museumLatLong %&gt;%
-    leaflet() %&gt;%
-    addTiles() %&gt;%
-    addMarkers(icon=museumIcon, popup=museumSites)</code></pre>
-<div id="htmlwidget-ae69f0005f3a0b8fff5c" style="width:672px;height:480px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-ae69f0005f3a0b8fff5c">{"x":{"calls":[{"method":"addTiles","args":["http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"maxNativeZoom":null,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"continuousWorld":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":null,"unloadInvisibleTiles":null,"updateWhenIdle":null,"detectRetina":false,"reuseTiles":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap\u003c/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA\u003c/a>"}]},{"method":"addMarkers","args":[[48.865379,48.860294,48.859962,48.855133,48.8637884,48.8484532],[2.2967,2.338629,2.326561,2.315818,2.3226724,2.3340285],{"iconUrl":{"data":"http://www.freeiconspng.com/uploads/museum-icon-6.jpg","index":0},"iconWidth":28.9782608695652,"iconHeight":31},null,null,{"clickable":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},["<a href='www.palaisgalliera.paris.fr/en'>Musée Galliera\u003c/a>","<a href='www.louvre.fr/en'>Musée du Louvre\u003c/a>","<a href='www.musee-orsay.fr/en/home.html'>Musée d'Orsay\u003c/a>","<a href='http://www.musee-rodin.fr/en/home'>Musée Rodin\u003c/a>","<a href='www.musee-orangerie.fr/en'>Musée de l'Orangerie\u003c/a>","<a href='en.museeduluxembourg.fr/'>Musée du Luxembourg\u003c/a>"],null,null]}],"limits":{"lat":[48.8484532,48.865379],"lng":[2.2967,2.338629]}},"evals":[],"jsHooks":[]}</script>
-</div>
-</div>
-<div id="conclusion" class="section level1">
-<h1>Conclusion</h1>
+<div id="november-19-2016" class="section level1">
+<h1>November 19, 2016</h1>
+<div id="htmlwidget-a90e65da8895417b58f4" style="width:672px;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-a90e65da8895417b58f4">{"x":{"calls":[{"method":"addTiles","args":["http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"maxNativeZoom":null,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"continuousWorld":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":null,"unloadInvisibleTiles":null,"updateWhenIdle":null,"detectRetina":false,"reuseTiles":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap\u003c/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA\u003c/a>"}]},{"method":"addMarkers","args":[[48.865379,48.860294,48.859962,48.855133,48.8637884,48.8484532],[2.2967,2.338629,2.326561,2.315818,2.3226724,2.3340285],{"iconUrl":{"data":"http://www.freeiconspng.com/uploads/museum-icon-6.jpg","index":0},"iconWidth":28.9782608695652,"iconHeight":31},null,null,{"clickable":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},["<a href='www.palaisgalliera.paris.fr/en'>Musée Galliera\u003c/a>","<a href='www.louvre.fr/en'>Musée du Louvre\u003c/a>","<a href='www.musee-orsay.fr/en/home.html'>Musée d'Orsay\u003c/a>","<a href='http://www.musee-rodin.fr/en/home'>Musée Rodin\u003c/a>","<a href='www.musee-orangerie.fr/en'>Musée de l'Orangerie\u003c/a>","<a href='en.museeduluxembourg.fr/'>Musée du Luxembourg\u003c/a>"],null,null]}],"limits":{"lat":[48.8484532,48.865379],"lng":[2.2967,2.338629]}},"evals":[],"jsHooks":[]}</script>
+<div id="conclusion" class="section level2">
+<h2>Conclusion</h2>
 <p>Voila! Enjoy your visits.</p>
+</div>
 </div>
 
 
